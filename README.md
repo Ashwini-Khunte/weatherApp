@@ -13,10 +13,6 @@ A modern weather application built with **Next.js** and **React**, featuring rea
 - **Responsive Design:** Works seamlessly on desktop and mobile devices.
 - **User Notifications:** Friendly toast notifications for errors and status updates.
 
-## Screenshots
-
-*(Add screenshots here if available)*
-
 ## Getting Started
 
 ### Prerequisites
@@ -89,7 +85,3 @@ This app uses the [OpenWeatherMap API](https://openweathermap.org/api). The API 
 - `build` – Build for production
 - `start` – Start the production server
 - `lint` – Run ESLint
-
-## License
-
-MIT
