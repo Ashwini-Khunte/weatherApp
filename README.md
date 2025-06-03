@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather App
+
+A modern weather application built with **Next.js** and **React**, featuring real-time weather data, 5-day and hourly forecasts, and a responsive, stylish UI powered by Tailwind CSS.
+
+## Features
+
+- **Current Weather:** Get up-to-date weather information for any city or your current location.
+- **5-Day Forecast:** View daily weather trends for the next five days.
+- **Hourly Forecast:** See detailed hourly weather predictions.
+- **Geolocation Support:** Fetch weather for your current location with one click.
+- **Search:** Find weather by city name.
+- **Live Clock:** Displays the current time and date.
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
+- **User Notifications:** Friendly toast notifications for errors and status updates.
+
+## Screenshots
+
+*(Add screenshots here if available)*
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or newer recommended)
+- npm, yarn, pnpm, or bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd weather-app
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
 
-## Learn More
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This app uses the [OpenWeatherMap API](https://openweathermap.org/api). The API key is currently hardcoded in the code. For production, you should move it to an environment variable:
 
-## Deploy on Vercel
+1. Create a `.env.local` file in the root directory.
+2. Add your API key:
+   ```
+   NEXT_PUBLIC_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+3. Update API calls in the code to use this variable.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/` – Main app entry, layout, and global styles
+- `src/components/` – UI components (Navbar, CityAndTime, ForeCast, Clock)
+- `public/` – Static assets (e.g., logo)
+- `package.json` – Project dependencies and scripts
+
+## Dependencies
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Scripts
+
+- `dev` – Start the development server
+- `build` – Build for production
+- `start` – Start the production server
+- `lint` – Run ESLint
+
+## License
+
+MIT
